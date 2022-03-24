@@ -17,9 +17,15 @@ nav a:hover {color:#1215E6 ;}
 nav a:hover {background-color:#C711DC ;}
 nav {padding: 10px;}
 nav {margin-bottom: 30px;}
+.footer {float: right;}
+.img1 {float: left;
+    margin-right: 20px;}
+.clearfloat {clear: both;}
+
 .row1, .row2 {
     display: flex;
-}
+    background-color: #cce5ff; border-radius: 1em;}
+.row1 {margin-bottom: 20px;}
 .row2 div {
     flex: 1;
     padding: 20px;
