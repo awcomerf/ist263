@@ -20,13 +20,14 @@ nav {padding: 10px;}
 nav {margin-bottom: 30px;}
 .footer {float: right;}
 .img1 {float: left;
-    margin-right: 20px;}
+    margin-right: 20px;
+    }
 .clearfloat {clear: both;}
 
 .row1, .row2, aside {
     display: flex;
     background-color: #cce5ff; border-radius: 1em;
-}
+    padding: 20 px;}
 .row1 {margin-bottom: 20px;}
 .row2 div {
     flex: 1;
@@ -38,3 +39,11 @@ nav {margin-bottom: 30px;}
 }
 .text {text-indent: 25px;}
 .aside {padding: 20 px;}
+.img2 {max-width: 100%;}
+.row2 {flex-wrap: wrap;}
+@media only screen and (max-width: 600px) {
+    nav a {display: block;
+    margin: 15px;}
+    nav span {display: none;}
+
+}
