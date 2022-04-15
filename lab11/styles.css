@@ -12,10 +12,11 @@ text-align: center;}
 a {color: #0476C9;}
 a:hover {color:#1215E6 ;}
 a:visited {color: #C711DC;}
-nav {background-color: #6B9E9D;}
-nav a {color: #0476C9;}
-nav a:hover {color:#1215E6 ;}
-nav a:hover {background-color:#C711DC ;}
+span {color: #0476C9;}
+nav {background-color: #050007;}
+nav a {color: #c98104;}
+nav a:hover {color:#cde612 ;}
+nav a:hover {background-color:#73dc11 ;}
 nav {padding: 10px;}
 nav {margin-bottom: 30px;}
 .footer {float: right;}
