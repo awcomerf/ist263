@@ -9,13 +9,13 @@ g.	Site Navigation Link Color 0476C9
 body {background-color: #72B796;}
 h1 {color: #1215E6;
 text-align: center;}
-a {color: #0476C9;}
+a {color: #C711DC;}
 a:hover {color:#1215E6 ;}
 a:visited {color: #C711DC;}
 span {color: #0476C9;}
 nav {background-color: #050007;}
 nav a {color: #c98104;}
-nav a:hover {color:#cde612 ;}
+nav a:hover {color:#C711DC ;}
 nav a:hover {background-color:#73dc11 ;}
 nav {padding: 10px;}
 nav {margin-bottom: 30px;}
