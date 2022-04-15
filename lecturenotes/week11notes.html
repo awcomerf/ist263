@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <style>
+        #skip {
+            position: absolute;
+            left: -999px;
+            background-color: orange;
+            padding: 5px;
+        }
+        #skip:focus {
+            left: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#content" id="skip" tabindex="1">Skip to Content</a> 
+        <a href="http://www.twitter.com" tabindex="4">Twitter</a> |
+        <a href="index.html" tabindex="2">Home</a> |
+        <a href="skills.html" tabindex="3">Skills</a> |
+        <a href="contact.html" tabindex="4">Contact</a>
+    </nav>
+    <h1>Accessibility</h1> <!-- Only one per page-->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis et voluptas eveniet. At eum hic, impedit deserunt veniam esse unde harum ipsam laboriosam laborum maxime. Dicta voluptate repellendus vel. Nulla?</p>
+    <h2>Tab Order</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, sit. Ratione possimus alias minima voluptatum. Architecto aperiam iste commodi cum praesentium ab esse accusantium incidunt nostrum. Nostrum, reiciendis. Iure, maxime!</p>
+    <h2 id="content">Semantic Tags</h2>
+        <h3>Aside</h3>
+        <h3>Article</h3>      
+</body>
+</html>
