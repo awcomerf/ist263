@@ -54,10 +54,11 @@ body {
 #skip {
     position: absolute;
     left: -999px;
-    background-color: orange;
+    background-color: rgb(3, 3, 3);
     padding: 5px;
 }
 #skip:focus {
     left: 10px;
     
 }
+a.black {color: black;}
