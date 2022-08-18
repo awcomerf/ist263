@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #top {
+            height: 10vh;
+                    }
+        .nav{
+            
+            text-align: center;
+            
+        }
+        .nav a{
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5vh;
+            font-family: 'Tahoma', sans-serif;
+            letter-spacing: .1px;
+            font-weight: 700;
+            padding: 25px;
+            padding-top: 30px;
+            
+                   
+
+        }
+        .nav img {
+            float: right;
+            padding-right: 2vh;
+            padding-top: 2vh;
+        }
+        .nav .left {
+            font-size: 2vh;
+            float: left;
+            color: #fff;
+            font-family: 'Tahoma', sans-serif;
+            font-weight: 10000;
+            margin-left: 2vh;
+            padding-top: 2vh;
+            
+        }
+        
+        a:link {
+            color: #fff;
+                    }
+        a:visited {
+            color: #fff;
+        }
+        body {
+            background-color: black;
+        }
+        .image {
+            height: 55vh;
+            
+            
+        }
+        .image  {
+            font-size: 7.5vh;
+            color: #fff;
+            text-align: center;
+            margin-top: 27vh;
+            
+            font-family: 'Georgia', serif;
+            font-weight: 1000;
+            
+                  }
+        .arrow {
+            background-color: black;
+            height: fit-content;
+            padding-bottom: 2.5vh;
+
+        }
+        .arrow img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 5vh;
+            
+            }
+        .button {
+                background-color: black;
+                color: white;
+                border: .5px solid orange;
+                cursor: pointer;
+                font-family: 'Tahoma', sans-serif;
+                font-size: 2.5vh;
+                border-radius: .5vh;
+                padding: 2vh;
+                
+                    }
+        .button:hover {
+            border: 1.75px solid orange;
+        }
+        .image1 img {
+            
+            height: 100%;
+            align-content: center;
+            width: 100%;
+            margin-right: 25px;
+        }
+        .footer1 {
+            display: flex;
+            padding-left: 25px;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding-top: 2vh;
+            align-items: center;
+            background-color: black;
+            
+            
+        }
+        .footer1 img {
+            justify-items: center;
+            flex: 1;
+            width: 100%;
+            }
+        .footer1 a:hover {
+            background-color: rgba(0,0,0,0);
+        }
+        .div {
+            text-align: center;
+        }
+        .div a{
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5vh;
+            font-family: 'Tahoma', sans-serif;
+            letter-spacing: .1px;
+            font-weight: 700;
+            padding: .5vh;
+            
+                   
+
+        }
+        .footer {
+            padding-bottom: 3vh;
+            padding-top: 3vh;
+        }
+        .who {
+            display: flex;
+            padding-top: 5vh;
+            padding-left: 5vh;
+            padding-bottom: 5vh;
+            border: 1px solid white;
+            align-items: center;
+            justify-content: center;
+        }
+        .text {
+            color: #fff;
+        }
+        .image1 {
+            flex: 1;
+            padding-right: 7vh;
+
+            
+            
+        }
+        .text {
+            flex: 2;
+            padding-right: 3vh;
+            padding-left: 3vh;
+        }
+        .text h2 {
+            font-size: 7vh;
+            font-family: 'Georgia', serif;
+            color: white;
+            }
+            
+        .text p {
+            margin-top: -3vh;
+            font-size: 2.5vh;
+            font-family: 'Georgia', serif;
+        }
+        
+
+        
+        .buttons {
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 10vh;
+            flex-wrap: wrap;
+            
+        }
+        .buttons .button {
+            background-color: black;
+            color: orange;
+            border: .5px solid orange;
+            cursor: pointer;
+            font-family: 'Tahoma', sans-serif;
+            font-size: 2.5vh;
+            border-radius: 0;
+            width: 40vh;
+            opacity: 1;
+            margin: 3vh;
+            
+            
+
+        }
+        .buttons .button h3,p {
+            color: #fff;
+        }
+
+        .buttons .button:hover {
+            border: 1.75px solid orange;
+        }
+        .buttons .button h3 {
+            margin-top: -1.5vh;
+        }
+
+        
+        .what  {
+            color: white;
+            padding-top: 2.5vh;
+            text-align: center;
+            font-size: 7vh;
+            font-family: 'Georgia', serif;
+        }
+        .nav a:hover {
+            font-size: 2vh;
+        }
+        .article img {
+            width: 75vh;
+            padding-right: 3vh;
+            
+            
+        }
+        .article {
+            padding-left: 5vh;
+            padding-bottom: 5vh;
+            padding-top: 5vh;
+            display: flex;
+            color: #fff;
+            padding-right: 5vh;
+            border: 1px solid white;
+            align-items: center;
+            justify-content: center;
+        }
+        .article h2 {
+            font-size: 7vh;
+            font-family: 'Georgia', serif;
+            color: white;
+            
+
+        }
+        .article p {
+            padding-bottom: 3vh;
+        }
+
+        .div a:hover {
+            font-size: 2vh;
+        }
+        .col1, .col2 {
+            flex: 1;
+        }
+        .col1 img { 
+            max-width: 100%;
+            
+            
+        }
+        .col1 {
+            display: inline;
+        }
+        .col2 {
+            padding: 3vh;
+            max-height: 100%;
+            align-items: center;
+            justify-content: center;
+        }   
+        .col2 h2 {
+            margin-top: 2vh;
+            margin-bottom: -1vh;
+            
+        }
+        .col2 p {
+            margin-bottom: -1vh;
+            font-size: 2.5vh;
+            font-family: 'Georgia', serif;
+        }
+        #hamburger {
+            display: none;
+        }
+        #dropdown {
+            display: none;
+            float: right;
+            text-align: center;
+            padding-right: .9vh;
+        }
+        #dropdown a {
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5vh;
+            font-family: 'Tahoma', sans-serif;
+            letter-spacing: .1px;
+            font-weight: 700;
+            padding: .5vh;
+        }
+        @media only screen and (max-width: 1000px) {
+                .image1 {
+                    display: none;
+                }             
+                .who {
+                    display: flex;
+                    padding: 5vh;
+                    border: 1px solid white;
+                                   }
+                .col1 {
+                    display: none;
+                    
+                }
+                .article {
+                    padding-left: 5vh;
+                    padding-bottom: 5vh;
+                    padding-top: 5vh;
+                    display: flex;
+                    color: #fff;
+                    padding-right: 5vh;
+                    border: 1px solid white;
+                }
+                .text h2 {
+                    padding-top: -5vh;
+                }
+                #navlinks {
+                    display: none;
+                }
+                .image {
+                    margin-top: 17vh;
+                    margin-bottom: 25vh;
+                }
+                .arrow {
+                    display: none;
+                }
+                .right {
+                    display: none;
+                }
+                #hamburger {display: block;
+                }
+                #dropdown a {
+                    border: 1px solid white;
+                    width: 10vh;
+                    
+                }
+                #dropdown a:hover {
+                    font-size: 2vh;
+                }
+                .col2 h2 {
+                    margin-top: 0vh;
+                    margin-bottom: -1vh;
+            
+                }
+            }
+    </style>
+    <script>
+        function scroll () {
+            var element = document.querySelector("image1");
+
+            // scroll to element
+            element.scrollIntoView();
+        }
+        function scroll2 () {
+            var element = document.querySelector("buttons");
+
+            // scroll to element
+            element.scrollIntoView();
+        }
+        function toggleNav () {
+               
+               if (document.getElementById('dropdown').style.getPropertyValue("display") == 'block') {
+                   document.getElementById('dropdown').style.display = "none";
+               }
+               else {
+                   document.getElementById('dropdown').style.display = "block";
+               }
+               
+               
+           }
+            
+
+        
+       
+    </script>
+</head>
+<body >
+    <div id="top">
+        
+        <div class="nav">
+            <img src="../images/aclogo.png" alt="" width="50vh" class="left">
+            <div id="navlinks">
+                <a href="black.html">Home</a> 
+                <a href="aboutme.html">About Me</a> 
+                <a href="services.html">Services</a> 
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>           
+                <img src="../images/aclogo2.png" alt="" width="50vh" class="right" >
+            </div>
+            
+            <img src="../images/white-hamburger-menu-icon-24.jpg" alt="hamburger icon" id="hamburger" width="50vh" onclick="toggleNav();">
+            
+        </div>
+        
+    </div>    
+        <div id="dropdown">
+            <a href="black.html">Home</a> <br>
+            <a href="aboutme.html">About Me</a> <br> 
+            <a href="services.html">Services</a> <br>
+            <a href="projects.html">Projects</a> <br>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="image">
+            
+                Web Developer, Data Analyst, <br>
+                & Student-Athlete.  <br>  
+            <a href="../personalsite/services.html">
+                <button class="button">Work with me</button>
+            </a>
+                
+        </div>
+        <div class="arrow">
+            <img src="../images/914-9148298_downarrow-white-down-arrow-icon-white.png" alt="" onmouseover="scrollIntoView({ behavior: 'smooth' });">
+        </div>
+        
+        
+        <div class="who">
+            <div class="text">
+                <h2>Who I Am.</h2>
+                <p>
+                    As a Student-Athlete at Syracuse University, I have found a large part of my identity from my competitive nature in sport and trying to be the best person I can be on the track and in the classroom. During my time here, I have grown a passion for web development and being able to help small businesses in the area.                     
+
+                </p>
+                <a href="../personalsite/aboutme.html">
+                    <button class="button" href>Learn more &#8594;</button>
+                </a>
+                
+            </div>
+            <div class="image1">
+                <img src="../images/alex_logo2.0.png" alt="">
+            </div>
+            
+            
+            
+            
+        </div>
+        
+        <h2 class="what" >What I do.</h2>
+        <div class="buttons">
+            
+            <div>
+                <a href="../personalsite/services.html">
+                    <button class="button"><h3>Web Development</h3> <p>As a student web developer, I specialize in small business website creation and maintenance. Working with me will allow you to have an affordable and customizable site, but with the personal attention and care every business deserves. </p>See more &#8594;</button>
+                </a>
+                
+            </div>
+            <div>
+                <a href="../personalsite/services.html">
+                    <button class="button"><h3>Data Analysis</h3> <p>
+                        During the summer, In-Home Companions has given me the oppurtunity to work as their Data Coordinatoor. This is a Home Health Care company local to my hometown in Kalamazoo, Michigan. My role is to use data to give insight on business decisions.
+                    </p>See more &#8594;</button>
+                </a>
+                
+            </div>
+            <div>
+                <a href="../personalsite/aboutme.html">
+                    <button class="button"><h3>Athletics</h3> <p>
+                        At Syracuse University, I have had the chance to compete for the Cross Country and Track teams. In my time here I have also had the oppurtunity to represent Team USA in cross country. This is what I love to do, and will continue to run as long as I love it.
+
+                    </p>See more &#8594;</button>
+                </a>
+                
+            </div>
+            
+        </div>
+        <div class="article">
+            <div class="col1">
+                <img src="../images/running_alex.jpg" alt="">
+            </div>
+            <div class="col2">
+                <h2>Weekly Feature</h2>
+                <p>
+                    Check out this week's article on (Random Example Title)! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dignissimos placeat eos inventore explicabo error.
+
+                </p>
+                <a href="">
+                    <button class="button">Read More</button>
+                </a>
+            </div>
+            
+        </div>
+        <section class="footer">
+            <div class="footer1">
+                <div><a href=""><img src="../images/aclogo.png" alt="" class="ac" height="100">
+                            </a></div>
+                <div><a href="https://www.instagram.com/alexcomerford_/"><img src="../images/instagram-xxl.png" alt="instagram" height="100" width="100"></a></div>
+                <div><a href="https://twitter.com/AlexComerford17"><img src="../images/twitter-xxl.png" alt="twitter" height="100" width="100"></a></div>
+                <div class="div">
+                    <a href="black.html">Home</a> <br>
+                    <a href="aboutme.html">About Me</a><br> 
+                    <a href="services.html">Services</a> <br>
+                    <a href="projects.html">Projects</a><br>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </section>
+    
+    
+    
+</body>
+</html>

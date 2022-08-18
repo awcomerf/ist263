@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #top {
+            height: 10vh;
+        }
+        .nav{
+            
+            text-align: center;
+            
+        }
+        .nav a{
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5vh;
+            font-family: 'Tahoma', sans-serif;
+            letter-spacing: .1px;
+            font-weight: 700;
+            padding: 25px;
+            padding-top: 30px;
+            
+                   
+
+        }
+        .nav img {
+            float: right;
+            padding-right: 2vh;
+            padding-top: 2vh;
+        }
+        .nav .left {
+            font-size: 2vh;
+            float: left;
+            color: #fff;
+            font-family: 'Tahoma', sans-serif;
+            font-weight: 10000;
+            margin-left: 2vh;
+            padding-top: 2vh;
+            
+        }
+        
+        a:link {
+            color: #fff;
+                    }
+        a:visited {
+            color: #fff;
+        }
+        body {
+            background-color: black;
+        }
+        .nav a:hover {
+            font-size: 2vh;
+        }
+        .footer {
+            padding-bottom: 3vh;
+            padding-top: 3vh;
+        }
+        
+        .footer1 {
+            display: flex;
+            padding-left: 25px;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding-top: 2vh;
+            align-items: center;
+            background-color: black;
+            
+            
+        }
+        .footer1 img {
+            justify-items: center;
+            flex: 1;
+            width: 100%;
+            }
+        .footer1 a:hover {
+            background-color: rgba(0,0,0,0);
+        }
+        .div {
+            text-align: center;
+        }
+        .div a{
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5vh;
+            font-family: 'Tahoma', sans-serif;
+            letter-spacing: .1px;
+            font-weight: 700;
+            padding: .5vh;
+            
+                   
+
+        }
+        .div a:hover {
+            font-size: 2vh;
+        }
+        h2 {
+            font-size: 7vh;
+            font-family: 'Georgia', serif;
+            color: white;
+        }
+        #dropdown {
+            display: none;
+            float: right;
+            text-align: center;
+            padding-right: .9vh;
+        }
+        #dropdown a {
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5vh;
+            font-family: 'Tahoma', sans-serif;
+            letter-spacing: .1px;
+            font-weight: 700;
+            padding: .5vh;
+        }
+        #hamburger {
+            display: none;
+        }
+        @media only screen and (max-width: 1000px) {
+                .image1 {
+                    display: none;
+                }         
+                #navlinks {
+                    display: none;
+                }
+                .image {
+                    margin-top: 20vh;
+                    margin-bottom: 25vh;
+                }
+                .arrow {
+                    display: none;
+                }
+                .right {
+                    display: none;
+                }
+                #hamburger {display: block;
+                }
+                #dropdown a {
+                    border: 1px solid white;
+                    width: 10vh;
+                    
+                }
+                #dropdown a:hover {
+                    font-size: 2vh;
+                }
+                
+            }
+    </style>
+    <script>
+        function toggleNav () {
+               
+               if (document.getElementById('dropdown').style.getPropertyValue("display") == 'block') {
+                   document.getElementById('dropdown').style.display = "none";
+               }
+               else {
+                   document.getElementById('dropdown').style.display = "block";
+               }
+               
+               
+           }
+    </script>
+</head>
+<body>
+    <div id="top">
+        
+        <div class="nav">
+            <img src="../images/aclogo.png" alt="" width="50vh" class="left">
+            <div id="navlinks">
+                <a href="black.html">Home</a> 
+                <a href="aboutme.html">About Me</a> 
+                <a href="services.html">Services</a> 
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>           
+                <img src="../images/aclogo2.png" alt="" width="50vh" class="right">
+            </div>
+            
+            <img src="../images/white-hamburger-menu-icon-24.jpg" alt="hamburger icon" id="hamburger" width="50vh" onclick="toggleNav();">
+            
+        </div>
+    </div>
+    <div id="dropdown">
+        <a href="black.html">Home</a> <br>
+        <a href="aboutme.html">About Me</a> <br> 
+        <a href="services.html">Services</a> <br>
+        <a href="projects.html">Projects</a> <br>
+        <a href="contact.html">Contact</a>
+    </div>
+    <h2>Services</h2>
+    <section class="footer">
+        <div class="footer1">
+            <div><a href=""><img src="../images/aclogo.png" alt="" class="ac" height="100">
+                        </a></div>
+            <div><a href="https://www.instagram.com/alexcomerford_/"><img src="../images/instagram-xxl.png" alt="instagram" height="100" width="100"></a></div>
+            <div><a href="https://twitter.com/AlexComerford17"><img src="../images/twitter-xxl.png" alt="twitter" height="100" width="100"></a></div>
+            <div class="div">
+                    <a href="black.html">Home</a> <br>
+                <a href="aboutme.html">About Me</a> <br>
+                <a href="services.html">Services</a> <br>
+                <a href="projects.html">Projects</a><br>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
