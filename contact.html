@@ -8,7 +8,7 @@
     <style>
         #top {
             height: 10vh;
-        }
+                    }
         .nav{
             
             text-align: center;
@@ -23,15 +23,16 @@
             letter-spacing: .1px;
             font-weight: 700;
             padding: 25px;
-            padding-top: 30px;
+            text-align: center;
             
                    
 
         }
+        
         .nav img {
             float: right;
             padding-right: 2vh;
-            padding-top: 2vh;
+            padding-top: 1vh;
         }
         .nav .left {
             font-size: 2vh;
@@ -40,8 +41,7 @@
             font-family: 'Tahoma', sans-serif;
             font-weight: 10000;
             margin-left: 2vh;
-            padding-top: 2vh;
-            
+            padding-top: 1vh;
         }
         
         a:link {
@@ -72,6 +72,9 @@
             
             
         }
+        .footer1 a {
+            font-family:'Tahoma', sans-serif;
+        }
         .footer1 img {
             justify-items: center;
             flex: 1;
@@ -88,7 +91,7 @@
             text-decoration: none;
             text-transform: uppercase;
             font-size: 1.5vh;
-            font-family: 'Tahoma', sans-serif;
+            
             letter-spacing: .1px;
             font-weight: 700;
             padding: .5vh;
@@ -99,16 +102,37 @@
         .div a:hover {
             font-size: 2vh;
         }
-        h2 {
+        .content h2 {
             font-size: 7vh;
-            font-family: 'Georgia', serif;
-            color: white;
+            font-family: 'Tahoma', sans-serif;
+            color: orange;
+            text-align: center;
+            margin-top: -.5vh;
+            margin-bottom: 0vh;
+            font-weight: lighter;
         }
+        .content p  {
+            color: #fff;
+            text-align: center;
+            margin-left: 10vw;
+            margin-right: 10vw;
+            font-size: 1.75vw;
+            padding-bottom: 3vh;
+            font-family: 'Tahoma', sans-serif;
+        }
+        .content form {
+            color: #fff;
+            margin-left:30vw ;
+        }
+       
         #dropdown {
             display: none;
             float: right;
             text-align: center;
             padding-right: .9vh;
+        }
+        #hamburger {
+            display: none;
         }
         #dropdown a {
             display: inline-block;
@@ -120,17 +144,52 @@
             font-weight: 700;
             padding: .5vh;
         }
-        #hamburger {
-            display: none;
+        .content label {
+            background-color: orange;
+            color: black;
+            padding: .75vw;
+            border-radius: .3vh;
+            font-size: 1.5vh;
+            font-family: 'Tahoma', sans-serif;
+            letter-spacing: .1px;
+            font-weight: 600;       
+            
+            
         }
-        .contactform {
-            color: #fff;
+        .content div {
+            margin-bottom: 2vh;
+            
         }
+        .content input[type=text],.content textarea {
+            width: 40vw;
+            height: 3vh;
+            
+
+        }
+        .content textarea {
+            width: 40vw;
+            height: 10vh;
+        }
+        .checkbox {
+            display: inline;
+        }
+        
+        input[type="submit"] {
+            background-color: orange;
+            color: black;
+            padding: .75vw;
+            border-radius: .3vh;
+            font-size: 1.5vh;
+            font-family: 'Tahoma', sans-serif;
+            letter-spacing: .1px;
+            font-weight: 600;
+        }
+       
         @media only screen and (max-width: 1000px) {
                 .image1 {
                     display: none;
                 }         
-                #navlinks {
+                #navlinks a, #navlinks .right {
                     display: none;
                 }
                 .image {
@@ -155,7 +214,6 @@
                 }
                 
             }
-
     </style>
     <script>
         function toggleNav () {
@@ -175,57 +233,95 @@
     <div id="top">
         
         <div class="nav">
-            <img src="../images/aclogo.png" alt="" width="50vh" class="left">
+            
             <div id="navlinks">
-                <a href="black.html">Home</a> 
-                <a href="aboutme.html">About Me</a> 
+                <img src="images/aclogo.png" alt="" width="50vh" class="left">
+                <a href="index.html">Home</a> 
                 <a href="services.html">Services</a> 
                 <a href="projects.html">Projects</a>
+                <a href="aboutme.html">About Me</a>
                 <a href="contact.html">Contact</a>           
-                <img src="../images/aclogo2.png" alt="" width="50vh" class="right">
+                <img src="images/aclogo2.png" alt="" width="50vh" class="right">
             </div>
             
-            <img src="../images/white-hamburger-menu-icon-24.jpg" alt="hamburger icon" id="hamburger" width="50vh" onclick="toggleNav();">
+            <img src="images/white-hamburger-menu-icon-24.jpg" alt="hamburger icon" id="hamburger" width="50vh" onclick="toggleNav();">
             
         </div>
     </div>
     <div id="dropdown">
-        <a href="black.html">Home</a> <br>
-        <a href="aboutme.html">About Me</a> <br> 
+        <a href="index.html">Home</a> <br>
         <a href="services.html">Services</a> <br>
         <a href="projects.html">Projects</a> <br>
+        <a href="aboutme.html">About Me</a> <br>
         <a href="contact.html">Contact</a>
     </div>
-    <h2>Contact</h2>
-    <div class="contactform">
-        <form action="https://formspree.io/f/mnqwdder" method="post">
-            <label for="firstname">Full Name: </label><br>
-            <input type="text" id="firstname" name="firstname"><br>
-            <label for="yes">Website Inquiry? </label>
-            <input type="checkbox" name="yes" id="yes"><br>
-            <label for="no">Analyst Inquiry? </label>
-            <input type="checkbox" name="no" id="no"><br>
-            <label for="explain">Explain what you are looking for briefly: </label><br>
-            <textarea name="explain" id="explain"></textarea><br>
-            <input type="submit" value="Send">
-        </form>
-
+    <div class="content">
+        <h2>Reach out to me</h2>
+        <p>Submit a form with any questions or inqueries that you may have about anything related to things on the site. I will be happy to answer any of your questions or set up a meeting with you! You can also contact me at (269) 365-4153. I look forward to speaking with you!</p>
+            <form action="https://formspree.io/f/mnqwdder" method="post">
+            
+            <div class="name">
+                <div>
+                    <label for="firstname">Full Name: </label><br>
+                </div>
+                <div>
+                    <input type="text" id="firstname" name="firstname">
+                </div>
+            </div><br>
+            <div class="email">
+                <div>
+                    <label for="email">Email: </label><br>
+                </div>
+                <div>
+                    <input type="text" id="email" name="email">
+                </div>
+            </div><br>
+            <div class="Subject">
+                <div>
+                    <label for="subject">Subject: </label><br>
+                </div>
+                <div>
+                    <input type="text" id="subject" name="subject">
+                </div>
+            </div><br>     
+            
+            <div class="explain">
+                <div>
+                    <label for="explain"><span>Explain what you are looking for briefly:</span>  </label><br>
+                </div>
+                <div>
+                    <textarea name="explain" id="explain"></textarea>
+                </div>
+            </div><br>
+            <div>
+                <input type="submit" value="Submit Form">
+            </div>
+            </form>
     </div>
+    
     <section class="footer">
         <div class="footer1">
-            <div><a href=""><img src="../images/aclogo.png" alt="" class="ac" height="100">
+            <div><a href=""><img src="images/aclogo.png" alt="" class="ac" height="100">
                         </a></div>
-            <div><a href="https://www.instagram.com/alexcomerford_/"><img src="../images/instagram-xxl.png" alt="instagram" height="100" width="100"></a></div>
-            <div><a href="https://twitter.com/AlexComerford17"><img src="../images/twitter-xxl.png" alt="twitter" height="100" width="100"></a></div>
+            <div><a href="https://www.instagram.com/alexcomerford_/"><img src="images/instagram-xxl.png" alt="instagram" height="100" width="100"></a></div>
+            <div><a href="https://twitter.com/AlexComerford17"><img src="images/twitter-xxl.png" alt="twitter" height="100" width="100"></a></div>
             <div class="div">
-                
-                <a href="black.html">Home</a> <br>
-                <a href="aboutme.html">About Me</a><br> 
+                <a href="index.html">Home</a> <br>
                 <a href="services.html">Services</a> <br>
                 <a href="projects.html">Projects</a><br>
+                <a href="aboutme.html">About Me</a><br>
                 <a href="contact.html">Contact</a>
             </div>
         </div>
     </section>
 </body>
 </html>
+
+        
+        
+        
+            
+        
+        
+        
+

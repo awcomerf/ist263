@@ -8,7 +8,8 @@
     <style>
         #top {
             height: 10vh;
-        }
+           
+                    }
         .nav{
             
             text-align: center;
@@ -23,15 +24,16 @@
             letter-spacing: .1px;
             font-weight: 700;
             padding: 25px;
-            padding-top: 30px;
+            text-align: center;
             
                    
 
         }
+        
         .nav img {
             float: right;
             padding-right: 2vh;
-            padding-top: 2vh;
+            padding-top: 1vh;
         }
         .nav .left {
             font-size: 2vh;
@@ -40,8 +42,7 @@
             font-family: 'Tahoma', sans-serif;
             font-weight: 10000;
             margin-left: 2vh;
-            padding-top: 2vh;
-            
+            padding-top: 1vh;
         }
         
         a:link {
@@ -99,11 +100,28 @@
         .div a:hover {
             font-size: 2vh;
         }
-        h2 {
-            font-size: 7vh;
-            font-family: 'Georgia', serif;
-            color: white;
+        .righttext h2 {
+            font-size: 4vw;
+            font-family: 'Tahoma', sans-serif;
+            color: orange;
+            letter-spacing: 1px;
+            font-weight: 50;
+            padding-left: 5vh;
+            margin-top: 1.5vh;
+            margin-bottom: -1vh;
+            
         }
+        .righttext p {
+            font-size: 1.5vw;
+            font-family: 'Tahoma', sans-serif;
+            color: white;
+            letter-spacing: 1px;
+            font-weight: 100;
+            padding-left: 5vh;
+            padding-right: 5vh;
+            width: 40vw;
+        }
+        
         #dropdown {
             display: none;
             float: right;
@@ -123,11 +141,125 @@
         #hamburger {
             display: none;
         }
+        .content {
+            display: flex;
+           
+            background-color: black;
+            margin-right: -1.5vh;
+            margin-left: -1.5vh;
+            padding-top: 6.5vh;
+            padding-bottom: 6.5vh;
+            
+        }
+        .content img {
+            margin-left: -1.5vh;
+            width: 100%;
+            height: 100%;
+        }
+        .leftimg {
+            flex: 1;
+            height: 73vh;
+
+        }
+        .righttext {
+            flex: 1;
+            height: 73vh;
+                  
+            
+            
+            
+        }
+        .button {
+        display: inline-block;
+        
+        background-color: black;
+        border-bottom: solid#fff;
+        color: #FFFFFF;
+        text-align: left;
+        font-size: 2.5vw;
+        
+        width: 40vw;
+        transition: all 0.5s;
+        cursor: pointer;
+        
+        margin-left: 5vh;
+        margin-bottom: 3vh;
+        margin-right: 5vh;
+        }
+        .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        }
+        .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        right: -23.5vw;
+        transition: 0.5s;
+        }
+        .button:hover span {
+        padding-right: 25px;
+        }
+
+        .button:hover span:after {
+        opacity: 1;
+        right: 0;
+        }
+        #button3 span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        right: -14.5vw;
+        transition: 0.5s;
+        }
+        #button3:hover span {
+        padding-right: 2vw;
+        }
+
+        #button3:hover span:after {
+        opacity: 1;
+        right: 0; }
+        #button4 span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        right: -15vw;
+        transition: 0.5s;
+        }
+        #button4:hover span {
+        padding-right: 2vw;
+        }
+
+        #button4:hover span:after {
+        opacity: 1;
+        right: 0; }
+        #button1 span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 1;
+        top: 0;
+        right: -20vw;
+        transition: 0.5s;
+        }
+        #button1:hover span {
+        padding-right: 2vw;
+        }
+
+        #button1:hover span:after {
+        opacity: 1;
+        right: 0; }
+        
+        
         @media only screen and (max-width: 1000px) {
                 .image1 {
                     display: none;
                 }         
-                #navlinks {
+                #navlinks a, #navlinks .right {
                     display: none;
                 }
                 .image {
@@ -150,6 +282,12 @@
                 #dropdown a:hover {
                     font-size: 2vh;
                 }
+                .content {
+                    display: block;
+                }
+                .button {
+                    width: 70vw;
+                }
                 
             }
     </style>
@@ -171,39 +309,53 @@
     <div id="top">
         
         <div class="nav">
-            <img src="../images/aclogo.png" alt="" width="50vh" class="left">
+            
             <div id="navlinks">
-                <a href="black.html">Home</a> 
-                <a href="aboutme.html">About Me</a> 
+                <img src="images/aclogo.png" alt="" width="50vh" class="left">
+                <a href="index.html">Home</a> 
                 <a href="services.html">Services</a> 
                 <a href="projects.html">Projects</a>
+                <a href="aboutme.html">About Me</a>
                 <a href="contact.html">Contact</a>           
-                <img src="../images/aclogo2.png" alt="" width="50vh" class="right">
+                <img src="images/aclogo2.png" alt="" width="50vh" class="right">
             </div>
             
-            <img src="../images/white-hamburger-menu-icon-24.jpg" alt="hamburger icon" id="hamburger" width="50vh" onclick="toggleNav();">
+            <img src="images/white-hamburger-menu-icon-24.jpg" alt="hamburger icon" id="hamburger" width="50vh" onclick="toggleNav();">
             
         </div>
     </div>
     <div id="dropdown">
-        <a href="black.html">Home</a> <br>
-        <a href="aboutme.html">About Me</a> <br> 
+        <a href="index.html">Home</a> <br>
         <a href="services.html">Services</a> <br>
         <a href="projects.html">Projects</a> <br>
+        <a href="aboutme.html">About Me</a> <br>
         <a href="contact.html">Contact</a>
     </div>
-    <h2>Services</h2>
+    <div class="content">
+        <div class="leftimg">
+            <img src="images/Development-Frameworks-846x697.jpg" alt="">
+        </div>
+        <div class="righttext">
+            <h2>SERVICES</h2>
+            <p>The services that I offer include Website Creation/Maintenance and Data Analysis. This comes with an individual relationship that puts each customers needs at the top of my priority list. All of my work is held to extremely high standards to ensure the satisfaction of my clients.</p>
+            <button class="button" id="button1"><span>Website Building </span></button>
+            <button class="button" id="button2"><span>Data Analysis </span></button>
+            <button class="button" id="button3"><span>Content Management </span></button>
+            <button class="button" id="button4"><span>Google Management </span></button>
+        </div>
+
+    </div>
     <section class="footer">
         <div class="footer1">
-            <div><a href=""><img src="../images/aclogo.png" alt="" class="ac" height="100">
+            <div><a href=""><img src="images/aclogo.png" alt="" class="ac" height="100">
                         </a></div>
-            <div><a href="https://www.instagram.com/alexcomerford_/"><img src="../images/instagram-xxl.png" alt="instagram" height="100" width="100"></a></div>
-            <div><a href="https://twitter.com/AlexComerford17"><img src="../images/twitter-xxl.png" alt="twitter" height="100" width="100"></a></div>
+            <div><a href="https://www.instagram.com/alexcomerford_/"><img src="images/instagram-xxl.png" alt="instagram" height="100" width="100"></a></div>
+            <div><a href="https://twitter.com/AlexComerford17"><img src="images/twitter-xxl.png" alt="twitter" height="100" width="100"></a></div>
             <div class="div">
-                    <a href="black.html">Home</a> <br>
-                <a href="aboutme.html">About Me</a> <br>
+                <a href="index.html">Home</a> <br>
                 <a href="services.html">Services</a> <br>
                 <a href="projects.html">Projects</a><br>
+                <a href="aboutme.html">About Me</a> <br>
                 <a href="contact.html">Contact</a>
             </div>
         </div>

@@ -8,7 +8,7 @@
     <style>
         #top {
             height: 10vh;
-                    }
+                }
         .nav{
             
             text-align: center;
@@ -23,15 +23,16 @@
             letter-spacing: .1px;
             font-weight: 700;
             padding: 25px;
-            padding-top: 30px;
+            text-align: center;
             
                    
 
         }
+        
         .nav img {
             float: right;
             padding-right: 2vh;
-            padding-top: 2vh;
+            padding-top: 1vh;
         }
         .nav .left {
             font-size: 2vh;
@@ -40,8 +41,7 @@
             font-family: 'Tahoma', sans-serif;
             font-weight: 10000;
             margin-left: 2vh;
-            padding-top: 2vh;
-            
+            padding-top: 1vh;
         }
         
         a:link {
@@ -167,14 +167,14 @@
         }
         .text h2 {
             font-size: 7vh;
-            font-family: 'Georgia', serif;
+            font-family: 'Tahoma', sans-serif;
             color: white;
             }
             
         .text p {
             margin-top: -3vh;
             font-size: 2.5vh;
-            font-family: 'Georgia', serif;
+            font-family: 'Tahoma', sans-serif;
         }
         
 
@@ -218,7 +218,7 @@
             padding-top: 2.5vh;
             text-align: center;
             font-size: 7vh;
-            font-family: 'Georgia', serif;
+            font-family: 'Tahoma', sans-serif;
         }
         .nav a:hover {
             font-size: 2vh;
@@ -241,8 +241,8 @@
             justify-content: center;
         }
         .article h2 {
-            font-size: 7vh;
-            font-family: 'Georgia', serif;
+            font-size: 6vh;
+            font-family: 'Tahoma', sans-serif;
             color: white;
             
 
@@ -279,7 +279,7 @@
         .col2 p {
             margin-bottom: -1vh;
             font-size: 2.5vh;
-            font-family: 'Georgia', serif;
+            font-family: 'Tahoma', sans-serif;
         }
         #hamburger {
             display: none;
@@ -300,6 +300,7 @@
             font-weight: 700;
             padding: .5vh;
         }
+        
         @media only screen and (max-width: 1000px) {
                 .image1 {
                     display: none;
@@ -325,7 +326,7 @@
                 .text h2 {
                     padding-top: -5vh;
                 }
-                #navlinks {
+                #navlinks a, #navlinks .right {
                     display: none;
                 }
                 .image {
@@ -389,26 +390,27 @@
     <div id="top">
         
         <div class="nav">
-            <img src="../images/aclogo.png" alt="" width="50vh" class="left">
+            
             <div id="navlinks">
-                <a href="black.html">Home</a> 
-                <a href="aboutme.html">About Me</a> 
+                <img src="images/aclogo.png" alt="" width="50vh" class="left">
+                <a href="index.html">Home</a> 
                 <a href="services.html">Services</a> 
                 <a href="projects.html">Projects</a>
+                <a href="aboutme.html">About Me</a>
                 <a href="contact.html">Contact</a>           
-                <img src="../images/aclogo2.png" alt="" width="50vh" class="right" >
+                <img src="images/aclogo2.png" alt="" width="50vh" class="right" >
             </div>
             
-            <img src="../images/white-hamburger-menu-icon-24.jpg" alt="hamburger icon" id="hamburger" width="50vh" onclick="toggleNav();">
+            <img src="images/white-hamburger-menu-icon-24.jpg" alt="hamburger icon" id="hamburger" width="50vh" onclick="toggleNav();">
             
         </div>
         
     </div>    
         <div id="dropdown">
-            <a href="black.html">Home</a> <br>
-            <a href="aboutme.html">About Me</a> <br> 
+            <a href="index.html">Home</a> <br>
             <a href="services.html">Services</a> <br>
             <a href="projects.html">Projects</a> <br>
+            <a href="aboutme.html">About Me</a> <br>
             <a href="contact.html">Contact</a>
         </div>
         <div class="image">
@@ -421,7 +423,7 @@
                 
         </div>
         <div class="arrow">
-            <img src="../images/914-9148298_downarrow-white-down-arrow-icon-white.png" alt="" onmouseover="scrollIntoView({ behavior: 'smooth' });">
+            <img src="images/914-9148298_downarrow-white-down-arrow-icon-white.png" alt="" onmouseover="scrollIntoView({ behavior: 'smooth' });">
         </div>
         
         
@@ -429,7 +431,7 @@
             <div class="text">
                 <h2>Who I Am.</h2>
                 <p>
-                    As a Student-Athlete at Syracuse University, I have found a large part of my identity from my competitive nature in sport and trying to be the best person I can be on the track and in the classroom. During my time here, I have grown a passion for web development and being able to help small businesses in the area.                     
+                    As a Student-Athlete at Syracuse University, I have found a large part of my identity from my competitive nature in sport and trying to be the best person I can be on the track and in the classroom. During my time here, I have grown a passion for web development and being able to help small businesses in the communities that I am in.                     
 
                 </p>
                 <a href="aboutme.html">
@@ -438,7 +440,7 @@
                 
             </div>
             <div class="image1">
-                <img src="../images/alex_logo2.0.png" alt="">
+                <img src="images/alex_logo2.0.png" alt="">
             </div>
             
             
@@ -476,12 +478,12 @@
         </div>
         <div class="article">
             <div class="col1">
-                <img src="../images/running_alex.jpg" alt="">
+                <img src="images/thumbnail_IMG_2896.jpg" alt="">
             </div>
             <div class="col2">
-                <h2>Weekly Feature</h2>
+                <h2>Article</h2>
                 <p>
-                    Check out this week's article on (Random Example Title)! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dignissimos placeat eos inventore explicabo error.
+                    Check out this week's article on (Random Example Title)! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem earum, nesciunt a dicta labore harum dolorum repellat explicabo, provident, dolor nisi corporis veritatis vero? Similique provident ducimus soluta repellat dicta!
 
                 </p>
                 <a href="">
@@ -492,15 +494,15 @@
         </div>
         <section class="footer">
             <div class="footer1">
-                <div><a href=""><img src="../images/aclogo.png" alt="" class="ac" height="100">
+                <div><a href=""><img src="images/aclogo.png" alt="" class="ac" height="100">
                             </a></div>
-                <div><a href="https://www.instagram.com/alexcomerford_/"><img src="../images/instagram-xxl.png" alt="instagram" height="100" width="100"></a></div>
-                <div><a href="https://twitter.com/AlexComerford17"><img src="../images/twitter-xxl.png" alt="twitter" height="100" width="100"></a></div>
+                <div><a href="https://www.instagram.com/alexcomerford_/"><img src="images/instagram-xxl.png" alt="instagram" height="100" width="100"></a></div>
+                <div><a href="https://twitter.com/AlexComerford17"><img src="images/twitter-xxl.png" alt="twitter" height="100" width="100"></a></div>
                 <div class="div">
-                    <a href="black.html">Home</a> <br>
-                    <a href="aboutme.html">About Me</a><br> 
+                    <a href="index.html">Home</a> <br>
                     <a href="services.html">Services</a> <br>
                     <a href="projects.html">Projects</a><br>
+                    <a href="aboutme.html">About Me</a><br>
                     <a href="contact.html">Contact</a>
                 </div>
             </div>

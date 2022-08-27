@@ -8,7 +8,7 @@
     <style>
         #top {
             height: 10vh;
-        }
+                    }
         .nav{
             
             text-align: center;
@@ -23,15 +23,16 @@
             letter-spacing: .1px;
             font-weight: 700;
             padding: 25px;
-            padding-top: 30px;
+            text-align: center;
             
                    
 
         }
+        
         .nav img {
             float: right;
             padding-right: 2vh;
-            padding-top: 2vh;
+            padding-top: 1vh;
         }
         .nav .left {
             font-size: 2vh;
@@ -40,8 +41,7 @@
             font-family: 'Tahoma', sans-serif;
             font-weight: 10000;
             margin-left: 2vh;
-            padding-top: 2vh;
-            
+            padding-top: 1vh;
         }
         
         a:link {
@@ -100,8 +100,6 @@
             font-size: 2vh;
         }
         h2 {
-            padding-left: 2vh;
-            margin-top: -5vh;
             font-size: 7vh;
             font-family: 'Georgia', serif;
             color: white;
@@ -111,7 +109,9 @@
             float: right;
             text-align: center;
             padding-right: .9vh;
-            padding-bottom: 2vh;
+        }
+        #hamburger {
+            display: none;
         }
         #dropdown a {
             display: inline-block;
@@ -123,21 +123,64 @@
             font-weight: 700;
             padding: .5vh;
         }
-        #hamburger {
-            display: none;
+        .topfold {
+            display: flex;
+            padding-top: 3vh
         }
-        .long img {
-            width: 100%;
+        .righttext {
+            flex: 1;
+            color: #fff;
+            margin: 1.5vh;
+            height: 80vh;
+           
+        }
+        .leftimg {
+            flex: 1;
+            height: 85vh;
+            
+        }
+        .topfold img {
+            margin-left: 1.5vw;
+            width: 90%;
+            height: 90%;
+            margin-top: 1.5vh;
+        }
+        .righttext h2 {
+            font-size: 4vw;
+            font-family: 'Tahoma', sans-serif;
+            color: orange;
+            letter-spacing: 1px;
+            font-weight: 50;
+            
+            
+            
+        }
+        .righttext h4 {
+            font-size: 1.5vw;
+            font-family: 'Tahoma', sans-serif;
+            color: silver;
+            letter-spacing: 1px;
+            font-weight: 100;
+            
+            
             
             
         }
-        
-      
+        .righttext p {
+            font-size: 1.5vw;
+            font-family: 'Tahoma', sans-serif;
+            color: white;
+            letter-spacing: 1px;
+            font-weight: 100;
+            padding-right: 2vw;
+           
+        }
+
         @media only screen and (max-width: 1000px) {
                 .image1 {
                     display: none;
                 }         
-                #navlinks {
+                #navlinks a, #navlinks .right {
                     display: none;
                 }
                 .image {
@@ -160,14 +203,8 @@
                 #dropdown a:hover {
                     font-size: 2vh;
                 }
-                h2 {
-                    font-size: 4vh;
-                    margin-top: -3vh;
-                    padding-left: 1vh;
-                }
                 
             }
-        
     </style>
     <script>
         function toggleNav () {
@@ -187,47 +224,52 @@
     <div id="top">
         
         <div class="nav">
-            <img src="../images/aclogo.png" alt="" width="50vh" class="left">
+            
             <div id="navlinks">
-                <a href="black.html">Home</a> 
-                <a href="aboutme.html">About Me</a> 
+                <img src="images/aclogo.png" alt="" width="50vh" class="left">
+                <a href="index.html">Home</a> 
                 <a href="services.html">Services</a> 
                 <a href="projects.html">Projects</a>
+                <a href="aboutme.html">About Me</a>
                 <a href="contact.html">Contact</a>           
-                <img src="../images/aclogo2.png" alt="" width="50vh" class="right">
+                <img src="images/aclogo2.png" alt="" width="50vh" class="right">
             </div>
             
-            
-            <img src="../images/white-hamburger-menu-icon-24.jpg" alt="hamburger icon" id="hamburger" width="50vh" onclick="toggleNav();">
+            <img src="images/white-hamburger-menu-icon-24.jpg" alt="hamburger icon" id="hamburger" width="50vh" onclick="toggleNav();">
             
         </div>
     </div>
     <div id="dropdown">
-        <a href="black.html">Home</a> <br>
-        <a href="aboutme.html">About Me</a> <br> 
+        <a href="index.html">Home</a> <br>
         <a href="services.html">Services</a> <br>
         <a href="projects.html">Projects</a> <br>
+        <a href="aboutme.html">About Me</a> <br>
         <a href="contact.html">Contact</a>
     </div>
-    <div class="long">
-        <img src="../images/trackphoto.jpg" alt="">
-
+    <div class="topfold">
+        <div class="leftimg">
+            <img src="images/thumbnail_IMG_2251.jpg" alt="">
+        </div>
+        <div class="righttext">
+            <h4>Developer</h4>
+            <h2>Alex <br>Comerford</h2>
+            <p>As a full time student and athlete, I have been able to pursue my passion for web development. This business is in the business of helping other companies and individuals create and manage their content on websites. At Syracuse, I have learned programming languages such as Python, R, HTML (and the associated languages of web development), and others. As an athlete, I have had the chance to compete for Team USA in cross country, been apart of a Regional Championship Team, and competed at the NCAA Championship meet twice. In my free time, I enjoy spendign time with friends and exploring the country and it's sites and parks. </p>
+        </div>
+        
     </div>
-    <h2>About Me</h2>
-    <div class="aboutme">
-
-    </div>
+    
+    
     <section class="footer">
         <div class="footer1">
-            <div><a href=""><img src="../images/aclogo.png" alt="" class="ac" height="100">
+            <div><a href=""><img src="images/aclogo.png" alt="" class="ac" height="100">
                         </a></div>
-            <div><a href="https://www.instagram.com/alexcomerford_/"><img src="../images/instagram-xxl.png" alt="instagram" height="100" width="100"></a></div>
-            <div><a href="https://twitter.com/AlexComerford17"><img src="../images/twitter-xxl.png" alt="twitter" height="100" width="100"></a></div>
+            <div><a href="https://www.instagram.com/alexcomerford_/"><img src="images/instagram-xxl.png" alt="instagram" height="100" width="100"></a></div>
+            <div><a href="https://twitter.com/AlexComerford17"><img src="images/twitter-xxl.png" alt="twitter" height="100" width="100"></a></div>
             <div class="div">
-                    <a href="black.html">Home</a> <br>
-                <a href="aboutme.html">About Me</a> <br>
-                <a href="services.html">Services</a>    <br>
+                <a href="index.html">Home</a> <br>
+                <a href="services.html">Services</a> <br>
                 <a href="projects.html">Projects</a><br>
+                <a href="aboutme.html">About Me</a><br>
                 <a href="contact.html">Contact</a>
             </div>
         </div>
