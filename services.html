@@ -101,7 +101,7 @@
             font-size: 2vh;
         }
         .righttext h2 {
-            font-size: 4vw;
+            font-size: 3em;
             font-family: 'Tahoma', sans-serif;
             color: orange;
             letter-spacing: 1px;
@@ -109,10 +109,13 @@
             padding-left: 5vh;
             margin-top: 1.5vh;
             margin-bottom: -1vh;
+            padding-top: 3vh;
+            
+            
             
         }
         .righttext p {
-            font-size: 1.5vw;
+            font-size: 1em;
             font-family: 'Tahoma', sans-serif;
             color: white;
             letter-spacing: 1px;
@@ -164,7 +167,8 @@
         .righttext {
             flex: 1;
             height: 73vh;
-                  
+            align-items: center;
+            justify-content: center;     
             
             
             
@@ -254,7 +258,25 @@
         opacity: 1;
         right: 0; }
         
-        
+        h2 {
+            font-size: 4vw;
+            font-family: 'Tahoma', sans-serif;
+            color: orange;
+            letter-spacing: 1px;
+            font-weight: 50;
+            padding-left: 5vh;
+            margin-top: 1.5vh;
+            margin-bottom: -1vh;
+            
+            
+            
+        }
+        #website, #data, #manage, #google {
+            display: none;
+        }
+        p {
+            color: #fff;
+        }
         @media only screen and (max-width: 1000px) {
                 .image1 {
                     display: none;
@@ -299,10 +321,69 @@
                }
                else {
                    document.getElementById('dropdown').style.display = "block";
+                   
                }
                
                
            }
+        function webOn () {
+               
+               if (document.getElementById('website').style.getPropertyValue("display") == 'block') {
+                   document.getElementById('website').style.display = "none";
+               }
+               else {
+                   document.getElementById('website').style.display = "block";
+                   document.getElementById('data').style.display = "none";
+                   document.getElementById('manage').style.display = "none";
+                   document.getElementById('google').style.display = "none";
+               }
+               
+               
+           }
+        function dataOn () {
+               
+               if (document.getElementById('data').style.getPropertyValue("display") == 'block') {
+                   document.getElementById('data').style.display = "none";
+               }
+               else {
+                   document.getElementById('data').style.display = "block";
+                   document.getElementById('website').style.display = "none";
+                   document.getElementById('manage').style.display = "none";
+                   document.getElementById('google').style.display = "none";
+               }
+               
+               
+           }
+        function manageOn () {
+               
+               if (document.getElementById('manage').style.getPropertyValue("display") == 'block') {
+                   document.getElementById('manage').style.display = "none";
+               }
+               else {
+                   document.getElementById('manage').style.display = "block";
+                   document.getElementById('data').style.display = "none";
+                   document.getElementById('website').style.display = "none";
+                   document.getElementById('google').style.display = "none";
+               }
+               
+               
+           }
+        function googleOn () {
+               
+            if (document.getElementById('google').style.getPropertyValue("display") == 'block') {
+                   document.getElementById('google').style.display = "none";
+               }
+               else {
+                   document.getElementById('google').style.display = "block";
+                   document.getElementById('data').style.display = "none";
+                   document.getElementById('manage').style.display = "none";
+                   document.getElementById('website').style.display = "none";
+                   
+               }
+               
+               
+           }
+        
     </script>
 </head>
 <body>
@@ -333,16 +414,42 @@
     </div>
     <div class="content">
         <div class="leftimg">
-            <img src="images/Development-Frameworks-846x697.jpg" alt="">
+            <img src="images/Development-Frameworks-846x697.jpg" alt="" >
         </div>
         <div class="righttext">
             <h2>SERVICES</h2>
             <p>The services that I offer include Website Creation/Maintenance and Data Analysis. This comes with an individual relationship that puts each customers needs at the top of my priority list. All of my work is held to extremely high standards to ensure the satisfaction of my clients.</p>
-            <button class="button" id="button1"><span>Website Building </span></button>
-            <button class="button" id="button2"><span>Data Analysis </span></button>
-            <button class="button" id="button3"><span>Content Management </span></button>
-            <button class="button" id="button4"><span>Google Management </span></button>
+            <a href="services.html#website">
+                <button class="button" id="button1" onclick="webOn(); " ><span>Website Building </span></button>
+            </a>
+            <a href="services.html#data">
+                <button class="button" id="button2" onclick="dataOn();"><span>Data Analysis </span></button>
+            </a>
+            <a href="services.html#manage">
+                <button class="button" id="button3" onclick="manageOn();"><span>Content Management </span></button>
+            </a>
+            <a href="services.html#google">
+                <button class="button" id="button4" onclick="googleOn();"><span>Google Management </span></button>
+            </a>
         </div>
+
+    </div>
+    <div id="website">
+        <h2>Website Building</h2>
+        <p>Description <br>
+            Pricing Breakdown <br>
+            Timing?</p>
+    </div>
+    <div id="data">
+        <h2>Data Analysis</h2>
+
+    </div>
+    <div id="manage">
+        <h2>Content Management</h2>
+
+    </div>
+    <div id="google">
+        <h2>Google Management</h2>
 
     </div>
     <section class="footer">
