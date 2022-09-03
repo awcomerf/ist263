@@ -100,9 +100,10 @@
             font-size: 2vh;
         }
         h2 {
-            font-size: 7vh;
+            font-size: 3vw;
             font-family: 'Georgia', serif;
             color: white;
+            padding-left: 2vw;
         }
         #dropdown {
             display: none;
@@ -123,15 +124,29 @@
             font-weight: 700;
             padding: .5vh;
         }
-        h2 {
-            font-size: 4vw;
-            font-family: 'Tahoma', sans-serif;
-            color: orange;
-            letter-spacing: 1px;
-            font-weight: 50;
+        
+        .python {
+            width: 95vw;
+            padding-left: 2vw;
         }
-        .projcontent {
-            height: 80vh;
+        .projcontent object, .projcontent img{
+            padding-bottom: 3vh;
+        }
+        
+        
+        .pdf {
+            width: 50vw;
+            height: 75vh;
+            padding-left: 2vw;
+        }
+        .MLB, .Storm {
+            display: flex;
+            color: #fff;
+        }
+       
+        p {
+            color: #fff;
+            padding-left: 2vw;
         }
         @media only screen and (max-width: 1000px) {
                 .image1 {
@@ -204,7 +219,39 @@
         <a href="contact.html">Contact</a>
     </div>
     <div class="projcontent">
-        <h2>Projects Coming Soon...</h2>
+        
+        <div class="MLB">
+            <div>
+                <object data="images/MLB Poster Project.pdf" type="application/pdf" class="pdf">
+                <embed src="mages/MLB Poster Project.pdf" type="application/pdf" class="pdf">
+                <p>This browser does not support PDFs. Please download the PDF to view it: <a href="mages/MLB Poster Project.pdf">Download PDF</a>.</p>
+                </embed>
+                </object>
+            </div>
+            <div>
+                <h2>MLB Data Analysis Project</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur soluta quisquam veniam corrupti eveniet culpa qui maxime iusto nam dolor saepe, non accusantium quos consectetur vel repellendus repudiandae maiores quas?</p>
+            </div>
+
+        </div>
+        <div class="Storm">
+            <div>
+                <object data="images/Storm Data Poster.pdf" type="application/pdf" class="pdf">
+                    <embed src="images/Storm Data Poster.pdf" type="application/pdf" class="pdf">
+                        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="images/Storm Data Poster.pdf">Download PDF</a>.</p>
+                    </embed>
+                </object>
+            </div>
+            <div>
+                <h2>Storm Data Analysis Project</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur soluta quisquam veniam corrupti eveniet culpa qui maxime iusto nam dolor saepe, non accusantium quos consectetur vel repellendus repudiandae maiores quas?</p>
+            </div>
+
+        </div>
+        <h2>Python Game Creation</h2>
+        <img src="images/Screenshot 2022-08-29 210345.jpg" alt="" class="python">
+        <img src="images/Screenshot 2022-08-29 210731.jpg" alt="" class="python">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi quam praesentium magni, facere odio deleniti impedit distinctio assumenda velit quo corrupti voluptates aspernatur temporibus doloribus minus, iusto perferendis explicabo quae!</p>
     </div>
     
     <section class="footer">

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Ups | Alamo Running</title>
+    <style>
+        nav{
+            width: 100%;
+            background-color: rgba(0,0,0,.2);
+            text-align: center;
+            
+        }
+        nav a{
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 2px;
+            font-weight: 600;
+            padding: 25px;
+                   
+
+        }
+        a:link {
+            color: #fff;
+        }
+        a:visited {
+            color: black;
+        }
+        footer a:visited {
+            color: #fff;
+        }
+        a:hover {
+            background-color: rgba(0,0,1,.4);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        footer {
+            padding-left: 0px;
+            background: #222;
+            font-family: 'Raleway', sans-serif;
+            color: #fff;
+            text-align: right;
+            font-size: .5vh;
+            
+            
+
+        }
+        footer .center nav a {
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 2px;
+            font-weight: 600;
+            padding: 25px;
+            
+            
+        }
+        .content {
+            padding-left: 25px;
+            background: #222;
+            font-family: 'Raleway', sans-serif;
+            color: #fff;
+            font-size: 2vh;
+            padding-bottom: 50vh;
+            padding-right: 25px;
+            padding-top: 25px;
+            
+
+        }
+        .content form {
+            margin-top: 30px;
+        }
+        #phone {
+            margin-bottom: 30px;
+        }
+        .camp {
+            margin-top: 30px;
+        }
+        #camp2, #method2, select  {
+            margin-bottom: 30px;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="index.html">Home</a> 
+        <a href="blogs.html">Blogs</a> 
+        <a href="bios.html">Bios</a> 
+        <a href="signups.html">Camp Sign-Ups</a>
+    </nav>
+    
+    <div class="content">
+        <h1>CAMP SIGN-UPS</h1>
+        <hr>
+        <form action="" method="post">
+                <label for="fullname">Full Name: </label><br>
+                <input type="text" id="fullname" name="fullname"><br>
+                <label for="email">Email: </label><br>
+                <input type="text" id="email" name="email"></input><br>
+                <label for="phone">Phone: </label><br>
+                <input type="text" id="phone" name="phone"></input><br>
+                <hr>
+                <p class="camp">What camp are you signing up for?</p>
+                <label for="camp1">Camp 1</label>
+                <input type="radio" name="camp1" id="camp1"><br>
+                <label for="camp2">Camp 2</label>
+                <input type="radio" name="camp2" id="camp2"><br>
+                <p>What contact methods work?</p>
+                <label for="method1">Phone</label>
+                <input type="checkbox" name="method1" id="method1"><br>
+                <label for="method2">Email</label>
+                <input type="checkbox" name="method2" id="method2"><br>
+                <label for="time">What time do you want to be contacted?</label><br>
+                <select id="time" name="time">
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                </select><hr>
+                <input type="submit" value="Submit">
+
+
+        </form>
+    </div>
+    
+</body>
+<footer>
+    <div class="center">
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="blogs.html">Blogs</a> 
+            <a href="bios.html">Bios</a> 
+            <a href="signups.html">Camp Sign-Ups</a>
+        </nav>
+        
+    </div>
+    <div class="cc">
+        
+        Alamo Running <br>
+        &copy; 2022 
+    </div>
+</footer>
+</html>
